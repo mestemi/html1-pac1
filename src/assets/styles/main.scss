@@ -20,7 +20,7 @@
         padding-bottom: 15px;
         letter-spacing: 2px;
 
-        @include media-query($breakpoint-md) {
+        @include media-query($breakpoint-lg) {
             font-size: 5rem;
             line-height: 5rem;
         }

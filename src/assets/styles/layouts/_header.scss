@@ -1,9 +1,10 @@
+
 .home .header {
     background-image: url('../images/header-mobile.jpg');
     background-size: cover;
     height: 100vh;
 
-    @include media-query($breakpoint-md) {
+    @include media-query($breakpoint-lg) {
         background-image: url('../images/header.jpg');
     }
 
