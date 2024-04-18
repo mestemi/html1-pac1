@@ -40,13 +40,10 @@
 
     &__list {
         display: grid;
-        grid-template-columns: 1fr;
         gap: 20px;
         justify-items: center;
-        
-        @include media-query($breakpoint-md) {
-            grid-template-columns: 1fr 1fr;
-        }
+        grid-template-columns: 1fr;
+
 
         @include media-query($breakpoint-lg) {
             grid-template-columns: 1fr 1fr 1fr;

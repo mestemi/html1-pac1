@@ -1,5 +1,3 @@
-console.log('Hello world!');
-
 document.addEventListener('DOMContentLoaded', function() {
     var filmsItems = document.querySelectorAll('.filmografia__item');
     var filmsTextWrapper = document.querySelectorAll('.filmografia__item-text-wrapper');
@@ -17,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 500);
     
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+  
+    menuBtn.addEventListener('click', function() {
+      menu.classList.toggle('active');
+    });
 
     let playTrailer = document.querySelectorAll('.play-trailer')[0];
     playTrailer.addEventListener('click', function() {
@@ -26,14 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
         videoTrailer.style.display = 'block';
         videoTrailer.src += "&autoplay=1"
 
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector('.menu');
-    
-        menuBtn.addEventListener('click', function() {
-        menu.classList.toggle('active');
-        });
     });
 });
