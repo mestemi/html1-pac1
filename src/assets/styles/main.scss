@@ -44,7 +44,6 @@
         justify-items: center;
         grid-template-columns: 1fr;
 
-
         @include media-query($breakpoint-lg) {
             grid-template-columns: 1fr 1fr 1fr;
         }
@@ -116,7 +115,7 @@
         }
 
         &-description {
-            font-size: .85rem;
+            font-size: 1.2rem;
             font-weight: 500;
             line-height: 1.5rem;
         }
